@@ -57,15 +57,30 @@ def analyze_answers(patient_answers):
     total_score = sum(patient_answers)
     if(total_score) >= 20:
         print(sep='\n')
+        print(f"Name: {name}")
+        print(f"Age: {age}")
+        print(f"Gender: {gender}")
+        print(sep='\n')
         print("Based on your responses, it seems like you may be experiencing symptoms of depression. We recommend seeking help from a mental health professional for a proper diagnosis and treatment plan.")
+        print(sep='\n')
         print("If you feel actively suicidal or have a plan, please call the National Suicide Prevention Lifeline at 1-800-273-8255, or text MHA to 741-741 to talk to a trained counselor from the Crisis Text Line.")
     elif 10 <= total_score < 20:
         print(sep='\n')
+        print(f"Name: {name}")
+        print(f"Age: {age}")
+        print(f"Gender: {gender}")
+        print(sep='\n')
         print("Based on your responses, it's possible that you may be experiencing mild symptoms of depression. We recommend monitoring your symptoms and seeking help from a mental health professional if they persist or worsen.")
+        print(sep='\n')
         print("If you feel actively suicidal or have a plan, please call the National Suicide Prevention Lifeline at 1-800-273-8255, or text MHA to 741-741 to talk to a trained counselor from the Crisis Text Line.")
     else:
         print(sep='\n')
+        print(f"Name: {name}")
+        print(f"Age: {age}")
+        print(f"Gender: {gender}")
+        print(sep='\n')
         print("Based on your responses, it seems like you may not be experiencing significant symptoms of depression. However, if you ever feel like you need support or guidance, it's always a good idea to seek help from a mental health professional.")
+        print(sep='\n')
         print("If you feel actively suicidal or have a plan, please call the National Suicide Prevention Lifeline at 1-800-273-8255, or text MHA to 741-741 to talk to a trained counselor from the Crisis Text Line.")
 
 # Call the functions to run the program
